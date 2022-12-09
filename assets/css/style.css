@@ -8,7 +8,7 @@ background-color: black;
     height: 85vh !important;
 }
 
-portfolio-area {
+.portfolio-area {
     margin: 0px 5%;
     display: grid;
     min-height: 500px;
@@ -16,6 +16,17 @@ portfolio-area {
     grid-template-rows: 75% 25%;
     grid-template-columns: 75% 25%;
     grid-template-areas:
-    "featuredProduct secondaryProduct"
-    "featuredProduct CTA";
+    "item2 item3"
+    "item4 item5";
+  }
+
+  .item1 {
+    background-image: url("../images/frosty.jpg");
+    height: 50vh;
+    padding: 0;
+  }
+  .item2 {
+    background-image: url("../images/BunnyPic3.jpg");
+    height: 50vh;
+    padding: 0;
   }
