@@ -1,0 +1,21 @@
+body {
+background-color: black;
+}
+
+.jumbotron {
+    background-image: url("../images/pool_in_rock.jpg");
+    background-size: cover;
+    height: 85vh !important;
+}
+
+portfolio-area {
+    margin: 0px 5%;
+    display: grid;
+    min-height: 500px;
+    height: 70vh;
+    grid-template-rows: 75% 25%;
+    grid-template-columns: 75% 25%;
+    grid-template-areas:
+    "featuredProduct secondaryProduct"
+    "featuredProduct CTA";
+  }
