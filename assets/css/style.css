@@ -1,0 +1,62 @@
+
+
+.jumbotron {
+  height: 65vh;
+  margin-bottom: 1px;
+  margin-top: 1px;
+}
+
+.main-project {
+  display:flex; 
+  flex-direction: column;
+  background-image: url("../images/jakes-logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  justify-content: flex-end;
+  font-weight: bold !important;
+}
+
+.main-project p {
+  font-weight: 450 !important;
+}
+
+.card {
+  border-radius: 30px;
+  padding: 5px;
+}
+
+.card-body.card1 {
+  background-image: url("../images/screenshot_1.png");
+  background-size: contain;
+   border-radius: 30px;
+}
+
+.card-body.card2 {
+  background-image: url("../images/Horiseon.png");
+  background-size: contain;
+   border-radius: 30px;
+}
+
+.card-body.card3 {
+  background-image: url("../images/02-portfolio-3.jpg");
+  background-size: contain;
+   border-radius: 30px;
+}
+
+.card-body.card4 {
+  background-image: url("../images/02-portfolio-4.jpg");
+  background-size: contain;
+   border-radius: 30px;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  /* align-items: space-between ; */
+  text-align: center;
+  height: fit-content;
+}
+
+a.nav-link {
+  text-align: center;
+}
