@@ -6,27 +6,40 @@ background-color: black;
     background-image: url("../images/pool_in_rock.jpg");
     background-size: cover;
     height: 85vh !important;
+    border: 1px solid black;
+    /* align-items: center; */
+
 }
 
-.portfolio-area {
-    margin: 0px 5%;
-    display: grid;
-    min-height: 500px;
-    height: 70vh;
-    grid-template-rows: 75% 25%;
-    grid-template-columns: 75% 25%;
-    grid-template-areas:
-    "item2 item3"
-    "item4 item5";
-  }
+.about p {
+    display: flex;
+    position: absolute;
+    top: 200px;
+    left: 35px;
+}
+
+.lead {
+  /* justify-content: center; */
+}
+
+header.jumbotron .device-container.avatar .img-fluid {
+    display:flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    height: 200px;
+    width: 200px;
+    border: 10px solid black;
+}
 
   .item1 {
     background-image: url("../images/frosty.jpg");
-    height: 50vh;
+    background-size: cover;
+    height: 80vh;
     padding: 0;
   }
-  .item2 {
+
+  .item2 card-img-top {
     background-image: url("../images/BunnyPic3.jpg");
-    height: 50vh;
+    height: 80vh;
     padding: 0;
   }

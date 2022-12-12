@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BootstrapPortfolio</title>
+    <!-- add in personal favicon made from avatar -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" alt="Penguin favicon">
 
 <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
@@ -17,37 +19,49 @@
         <div class="jumbotron">
             <h1 class="display-4">Ben Shingleton - Personal Web portfolio</h1>
             <p class="lead">A collection of work to showcase my web front end skills</p>
-            
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            <!-- <div class="media">
+                <img class="align-self-start mr-3" src="./assets/images/avatar.jpg" alt="Penguin avater image">
+                <div class="media-body">
+                  <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                  <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                </div> -->
+
+                <!-- experiment with a different media body as I may have used the wrong one b4  -->
+                <!-- <div class="media">
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1 avatar">Media object</h5>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                  </div>
+                  <img class="mr-5" src="./assets/images/avatar.jpg" alt="Penguin avater image">
+                </div> -->
+
+                <div class="col-lg-5 my-auto">
+                  <div class="device-container">
+                    <img src="./assets/images/avatar.jpg" class="img-fluid" alt="">
+                  </div>
+                <!-- end code block test -->
+              </div>
           </div>
-    </header>    
+          <div class="about">
+            <p>Welcome top my portfolio, here you will find various web projects
+                 demonstrating usage of different web technologies.</p>
+          </div>
+
+    </header>
 
     <section class="main-project">
-        <div id="item1" class="item1">
-            <div class="heading">Project_1</div>
+        <div class="item1">
+            <div class="heading">Main Project</div>
           </div>
     </section>
-    <!-- <section class="portfolio-area">
-          <div id="item2" class="item2">
-            <div class="heading">Project_2</div>
-          </div>
-          <div id="item3" class="item3">
-            <div class="heading">Project_3</div>
-          </div>
-          <div id="item4" class="item4">
-            <div class="heading">Project_4</div>
-          </div>
-          <div id="item5" class="item5">
-            <div class="heading">Project_5</div>
-          </div> -->
-
+    <section class="project-group">
           <div class="row row-cols-3 row-cols-md-4">
             <div class="col mb-4">
-              <div class="card">
+              <div class="card item2">
                 <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="item2">Project 2</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">Long card text</p>
                 </div>
               </div>
             </div>
