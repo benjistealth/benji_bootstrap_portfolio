@@ -9,7 +9,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
 
   <title>Bootstrap Portfolio</title>
 </head>
@@ -69,56 +69,67 @@
 
   <!-- second jumbotron to use as a click through to Main project -->
   <a href="https://benjistealth.github.io/benji_jakes_eatery/">
-  <div class="jumbotron jumbotron-fluid bg-dark main-project text-white">
-    <div class="container">
-      <h2 class="display-4">Main Project</h2>
-      <p class="lead">This was one of my first projects when I started web front end.</p>
+    <div class="jumbotron jumbotron-fluid bg-dark main-project text-white">
+      <div class="container">
+        <h2 class="display-4">Main Project</h2>
+        <p class="lead">This was one of my first projects when I started web front end.</p>
+      </div>
     </div>
-  </div>
-</a>
+  </a>
   <!-- Bootstrap cards here -->
+<div class="container">
   <div class="card-deck bg-dark">
-    <div class="card">
-      <div class="card-img-top card1" alt="..."></div>
-      <div class="card-body card1">
-        <h5 class="card-title">Old WebDev Portfolio</h5>
-        <p class="card-text">I was climbing a steep path to learning some new technologies here.</p>
-        <p class="card-text"><small class="text-muted">It isn't pretty but it demonstrates some new skills</small></p>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-img-top card1" alt="..."></div>
+          <div class="card-body card1">
+            <h5 class="card-title">Old WebDev Portfolio</h5>
+            <p class="card-text">I was climbing a steep path to learning some new technologies here.</p>
+            <p class="card-text"><small class="text-muted">It isn't pretty but it demonstrates some new skills</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-top card2" alt="..."></div>
+          <div class="card-body card2">
+            <h5 class="card-title">Horiseon Refactoring Challenge</h5>
+            <p class="card-text"></p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="card">
-      <div class="card-img-top card2" alt="..."></div>
-      <div class="card-body card2">
-        <h5 class="card-title">Horiseon Refactoring Challenge</h5>
-        <p class="card-text"></p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-img-top card3" alt="..."></div>
-      <div class="card-body card3">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
-          This card has even longer content than the first to show that equal height action.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-img-top card4" alt="..."></div>
-      <div class="card-body card4">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
-          This card has even longer content than the first to show that equal height action.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-img-top card3" alt="..."></div>
+          <div class="card-body card3">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content.
+              This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-top card4" alt="..."></div>
+          <div class="card-body card4">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content.
+              This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-
+</div>
 
   <footer>
     <!-- changed the native color to dark using inbuilt CSS from Bootstrap :-) -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    
+
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
