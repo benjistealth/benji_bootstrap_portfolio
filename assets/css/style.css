@@ -20,6 +20,10 @@ a.nav-item.nav-link:hover {
   margin-top: 1px;
 }
 
+.about-text {
+  margin-left: 10rem;
+}
+
 img.mr-3.media.avatar {
   display: flex;
   flex-direction: row-reverse;
@@ -43,6 +47,10 @@ img.mr-3.media.avatar {
   margin-top: 1px;
 }
 
+.main-project h2,
+.main-project.mp-text {
+  text-align: left;
+}
 /* .main-project:hover {
   color: purple;
 } */
