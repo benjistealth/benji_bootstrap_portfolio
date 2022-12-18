@@ -5,26 +5,26 @@ A remake of my personal web portfolio using bootstrap and advanced CSS
 
 - This is the challenge at the end of module 3 of the EDX Front End Bootcamp
 - To create a portfolio page to showcase any projects we have created
-- Utilising Bootstrap, HTML & CSS, with Media queries and CSS variables
+- Utilising Bootstrap, HTML & CSS
 - Incorporates any work completed so far as content, using images as placeholders for future work
 
 ## Screenshot of top of page of deployed application
 
-    <p align="center">
+    
   <img alt="Screenshot_1" src="assets\images\screenshot1.png">
-</p>
+
 
 ## Screenshot of middle of page of deployed application
 
-    <p align="center">
+
   <img alt="Screenshot_2" src="assets\images\screenshot2.png">
-</p>
+  
 
 ## Screenshot of bottom of page of deployed application
 
-    <p align="center">
+
   <img alt="Screenshot_2" src="assets\images\screenshot3.png">
-</p>
+
 
 ## Installation
 
