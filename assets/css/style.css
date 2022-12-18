@@ -4,6 +4,8 @@
   height: 65vh;
   margin-bottom: 1px;
   margin-top: 1px;
+  font-weight: bold !important;
+  /* font-weight: 450 !important; */
 }
 
 .main-project {
@@ -13,11 +15,11 @@
   background-repeat: no-repeat;
   background-size: contain;
   justify-content: flex-end;
-  font-weight: bold !important;
+  text-decoration: none !important;
 }
 
-.main-project p {
-  font-weight: 450 !important;
+a:hover {
+  text-decoration: none !important;
 }
 
 .card {
@@ -27,25 +29,29 @@
 
 .card-body.card1 {
   background-image: url("../images/screenshot_1.png");
-  background-size: contain;
-   border-radius: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
 }
 
 .card-body.card2 {
   background-image: url("../images/Horiseon.png");
-  background-size: contain;
+  background-repeat: no-repeat;
+  background-size:cover;
    border-radius: 30px;
 }
 
 .card-body.card3 {
   background-image: url("../images/02-portfolio-3.jpg");
-  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
    border-radius: 30px;
 }
 
 .card-body.card4 {
   background-image: url("../images/02-portfolio-4.jpg");
-  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
    border-radius: 30px;
 }
 
