@@ -3,11 +3,27 @@ body {
 }
 
 
+
+a.nav-item.nav-link {
+  margin-left: 10px;
+  color: white;
+
+}
+
+a.nav-item.nav-link:hover {
+  color:blueviolet;
+}
+
 .top-jumbo {
+  display: flex;
+  flex-direction: row;
+  
   height: 45vh;
   margin-bottom: 1px;
   margin-top: 1px;
-  font-weight: bold !important;
+  border: black !important;
+  border-width: 3px !important;
+  /* font-weight: bold !important; */
   /* font-weight: 450 !important; */
 }
 
@@ -22,8 +38,11 @@ body {
   height: 65vh;
   margin-bottom: 1px;
   margin-top: 1px;
-  font-weight: bold !important;
 }
+
+/* .main-project:hover {
+  color: purple;
+} */
 
 a:hover {
   text-decoration: none !important;
@@ -31,13 +50,16 @@ a:hover {
 
 .card {
   border-radius: 30px;
+  border-color: black;
+  border-width: 3px;
   padding: 10px;
   color: black;
   text-decoration: none !important;
 }
 
 .card:hover {
-  
+  border-color: blueviolet;
+  transition: all 0.2s ease-in-out;
 }
 
 .card1 {
