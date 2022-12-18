@@ -19,7 +19,7 @@
   <header>
     <!-- bootstrap nav here -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Banana</a>
+      <a class="navbar-brand" href="#main-project">Main Project</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -28,24 +28,24 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#card1">Old Web Dev Portfolio<span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+          <li class="nav-item active">
+            <a class="nav-link" href="#card2">Horiseon Refactoring Challenge</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
               Dropdown
             </a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Here is something else I do</a>
-              <a class="dropdown-item" href="#">Link to yet even more things that I wanna talk about</a>
+              <a class="dropdown-item" href="#card3">Project Placeholder</a>
+              <a class="dropdown-item" href="#card4">Project Placeholder</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">Something else here</a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="navbar-brand">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
@@ -64,15 +64,18 @@
       <h1 class="display-4">Web Dev Portfolio</h1>
       <h2 class="person-name">Ben Shingleton</h2>
       <p class="lead">This is some text about me and how I am good at things.</p>
+      <p class="lead">This is some text about me and how I am good at things.</p>
+      <p class="lead">This is some text about me and how I am good at things.</p>
     </div>
   </div>
 
   <!-- second jumbotron to use as a click through to Main project -->
   <a href="https://benjistealth.github.io/benji_jakes_eatery/">
-    <div class="jumbotron jumbotron-fluid bg-dark main-project text-white">
+    <div class="jumbotron jumbotron-fluid bg-dark main-project text-white" id="main-project">
       <div class="container">
-        <h2 class="display-4">Main Project</h2>
+        <h2 class="display-5">Main Project</h2>
         <p class="lead">This was one of my first projects when I started web front end.</p>
+        <p class="lead">I learned how to place and format text, images and links.</p>
       </div>
     </div>
   </a>
@@ -81,14 +84,14 @@
 
     <div class="row bg-dark">
 
-      <div class="col-md-6">
+      <div class="col-md-6 bg-dark">
         <a href="https://benjistealth.github.io/benji_personal_webdev_portfolio/">
-        <div class="card">
+        <div class="card" id="card1">
           <div class="card-block">
             <div class="card-img-top card1 img-fluid" alt="..."></div>
             <div class="card-body">
               <h5 class="card-title">Old WebDev Portfolio</h5>
-              <p class="card-text">I was climbing a steep path to learning some new technologies here.  I used CSS Grid for the first time here, and implemented Media Queries.</p>
+              <p class="card-text">I was climbing a steep path to learning some new technologies here.  I used CSS Grid here, and implemented Media Queries.</p>
               <p class="card-text"><small class="text-muted">It isn't pretty but it demonstrates some new skills</small>
               </p>
             </div>
@@ -98,7 +101,7 @@
       </div>
       <div class="col-md-6">
         <a href="https://benjistealth.github.io/benji_refactoring_challenge_module1/">
-        <div class="card">
+        <div class="card" id="card2">
           <div class="card-block">
             <div class="card-img-top card2 img-fluid" alt="..."></div>
             <div class="card-body">
@@ -112,7 +115,7 @@
       </a>
       </div>
       <div class="col-md-6">
-        <div class="card">
+        <div class="card" id="card3">
           <div class="card-block">
             <div class="card-img-top card3 img-fluid" alt="..."></div>
             <div class="card-body">
@@ -125,7 +128,7 @@
         </div>
       </div>
       <div class="col-md-6">
-        <div class="card">
+        <div class="card" id="card4">
           <div class="card-block">
             <div class="card-img-top card4 img-fluid" alt="..."></div>
             <div class="card-body">
@@ -141,13 +144,15 @@
   </div>
 
   <footer>
+    <div>
     <!-- changed the native color to dark using inbuilt CSS from Bootstrap :-) -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mx-auto text-white" id="contact">
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item">
@@ -162,7 +167,7 @@
         </ul>
       </div>
     </nav>
-
+  </div>
 
   </footer>
 
