@@ -16,15 +16,15 @@ A remake of my personal web portfolio using bootstrap and advanced CSS
 
 ## Screenshot of middle of page of deployed application
 
-    <p align="center">
+
   <img alt="Screenshot_2" src="assets\images\screenshot2.png">
-</p>
+  
 
 ## Screenshot of bottom of page of deployed application
 
-    <p align="center">
+
   <img alt="Screenshot_2" src="assets\images\screenshot3.png">
-</p>
+
 
 ## Installation
 
