@@ -1,16 +1,23 @@
+/* global styles */
 body {
   background-color: black;
 }
 
+a:hover {
+  text-decoration: none !important;
+}
+
+/* Nav styles */
 a.nav-item.nav-link.main-link {
   margin-left: 10px;
   color: white;
 }
-
+/* highlight nav link on hover */
 .nav-link:hover {
   color: blueviolet !important;
 }
 
+/* Title jumbotron styles */
 .top-jumbo {
   display: flex;
   align-items: center;
@@ -39,6 +46,7 @@ img.mr-3.media.avatar {
   display: flex;
 }
 
+/* Main project styles - Jakes Eatery */
 .main-project {
   display: flex;
   flex-direction: column;
@@ -71,10 +79,7 @@ img.mr-3.media.avatar {
   color: blueviolet !important;
 }
 
-a:hover {
-  text-decoration: none !important;
-}
-
+/* Card styles */
 .card {
   border-radius: 30px;
   border-color: black;
@@ -115,6 +120,7 @@ a:hover {
   height: 60vh;
 }
 
+/* Footer styles */
 footer {
   margin-top: 1px;
   border: 2px !important;
