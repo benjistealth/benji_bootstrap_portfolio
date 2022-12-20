@@ -71,11 +71,6 @@ a:hover {
   text-decoration: none !important;
 }
 
-/* .code-card:hover,
-.code-card:hover .card-header {
-  box-shadow: inset 0px 0px 8px var(--heliotrope), 0 0 15px var(--heliotrope);
-} */
-
 .card:hover {
   border-color: blueviolet;
   transition: all 0.2s ease-in-out;
