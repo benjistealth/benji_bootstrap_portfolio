@@ -1,23 +1,19 @@
 body {
-  background-color:black;
+  background-color: black;
 }
-
-
 
 a.nav-item.nav-link.main-link {
   margin-left: 10px;
   color: white;
-
 }
 
-a.nav-item.nav-link:hover {
-  color:blueviolet;
+.nav-link:hover {
+  color: blueviolet !important;
 }
 
 .top-jumbo {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
   height: 25vh;
   margin-bottom: 1px;
   margin-top: 1px;
@@ -26,11 +22,9 @@ a.nav-item.nav-link:hover {
 .main-heading:hover {
   color: blueviolet !important;
 }
+
 .about-text {
-  /* display: flex; */
-  /* align-items: flex-start; */
-  /* margin-left: 200px; */
-  position:relative;
+  position: relative;
 }
 
 .about-text:hover {
@@ -43,13 +37,6 @@ h1.display-4 {
 
 img.mr-3.media.avatar {
   display: flex;
-  /* flex-direction: row-reverse; */
-  /* align-items: flex-end !important; */
-  /* justify-content: flex-start; */
-  /* height: contain; */
-  /* padding: 5px; */
-  /* height: 12vh; */
-  /* margin-left: 0px; */
 }
 
 .main-project {
@@ -66,7 +53,7 @@ img.mr-3.media.avatar {
 }
 
 .main-project h2 {
-  padding: 0 ;
+  padding: 0;
 }
 
 .mp-text {
@@ -79,6 +66,7 @@ img.mr-3.media.avatar {
   text-align: left;
   margin-bottom: 20px;
 }
+
 .mp-text:hover {
   color: blueviolet !important;
 }
@@ -95,6 +83,7 @@ a:hover {
   color: black;
   text-decoration: none !important;
 }
+
 /* highlight card border on hover */
 .card:hover {
   border-color: blueviolet;
@@ -103,15 +92,12 @@ a:hover {
 
 .card1 {
   background-image: url("../images/screenshot_1.png");
-  /* background-repeat: no-repeat;
-  background-size: cover; */
   border-radius: 30px;
   height: 60vh;
 }
 
 .card2 {
   background-image: url("../images/Horiseon2.png");
-  /* background-repeat: no-repeat; */
   background-size: cover;
   border-radius: 30px;
   height: 60vh;
@@ -119,22 +105,17 @@ a:hover {
 
 .card3 {
   background-image: url("../images/02-portfolio-3.jpg");
-  /* background-repeat: no-repeat;
-  background-size: cover; */
   border-radius: 30px;
   height: 60vh;
 }
 
 .card4 {
   background-image: url("../images/02-portfolio-4.jpg");
-  /* background-repeat: no-repeat;
-  background-size: cover; */
   border-radius: 30px;
   height: 60vh;
 }
 
 footer {
   margin-top: 1px;
-  border: 2px !important  ;
-  /* border-color: black; */
+  border: 2px !important;
 }
