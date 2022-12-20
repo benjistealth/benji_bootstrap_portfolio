@@ -10,40 +10,44 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/style.css">
-
   <title>Bootstrap Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" alt="Penguin favicon">
 </head>
+
 <body>
   <header>
     <!-- bootstrap nav here -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#main-project">Main Project</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar-nav navbar-expand-lg navbar-dark bg-dark">
+      <a class="nav-item nav-link main-link" href="#main-project">Main Project</a>
+      <button class="navbar-toggler shadow-lg p-3 mb-5" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="#card1">Old Web Dev Portfolio<span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#card2">Horiseon Refactoring Challenge</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#card2">Horiseon</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
               Dropdown
             </a>
-            <div class="dropdown-menu active">
+            <div class="dropdown-menu">
               <a class="dropdown-item" href="#card3">Project Placeholder</a>
               <a class="dropdown-item" href="#card4">Project Placeholder</a>
+              <a class="dropdown-item" href="#footer">Skills</a>
+              <a class="dropdown-item" href="#footer">More About Me</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">Something else here</a>
             </div>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#contact">Contact</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">Contact</a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
@@ -53,30 +57,46 @@
       </div>
     </nav>
 
-
   </header>
 
   <!-- bootstrap jumbotron here  -->
-  <div class="jumbotron jumbotron-fluid bg-dark text-white top-jumbo">
-    <div class="container">
-      <h1 class="display-4">Web Dev Portfolio</h1>
-      <h2 class="person-name">Ben Shingleton</h2>
-      <p class="lead">I am learning front end web development, and here are some samples from my work.</p>
-      <p class="lead">The below projetcs show progression through the various technplogies we have learnt.</p>
-      <p class="lead">This portfolio will be a constant evolution over time.</p>
-    </div>
-  </div>
-
-  <!-- second jumbotron to use as a click through to Main project -->
-  <a href="https://benjistealth.github.io/benji_jakes_eatery/">
-    <div class="jumbotron jumbotron-fluid bg-dark main-project text-white" id="main-project">
-      <div class="container">
-        <h2 class="display-5">Main Project</h2>
-        <p class="lead">This was one of my first projects when I started web front end.</p>
-        <p class="lead">I learned how to place and format text, images and links.</p>
+  <div class="jumbotron-fluid bg-dark text-white top-jumbo">
+    <div class="container-lg">
+      <div class="row">
+      <img class="ml-0 media fixed-left avatar col-2" src="./assets/images/avatar.jpg" alt="Penguin with PCB on stomach as personal avatar">
+      <!-- <div class="media mr-3 avatar"></div> -->
+          <div class="col-9">
+      <h1 class="d-flex">Web Dev Portfolio: Ben Shingleton</h1>
+      <!-- <h2 class="display-4"></h2> -->
+      <!-- <div class="container-fluid about"> -->
+        <!-- used bootstrap class to remove text on smaller screens -->
+        <div class="about-text d-none d-lg-block">
+          <span>
+            I am learning front end web development, and here are some samples from my work. 
+          </span><br>
+          <span>
+            The below projetcs show progression through the various technplogies I have learnt.
+          </span><br>
+          <span>
+            This portfolio will be a constant evolution over time.
+          </span>
+        </div>
       </div>
     </div>
+  </div>
+  </div>
+  <!-- <div class="container row"> -->
+  <!-- second jumbotron to use as a click through to Main project -->
+  <a href="https://benjistealth.github.io/benji_jakes_eatery/">
+    <div class="jumbotron-fluid bg-dark main-project text-white" id="main-project">
+      <div class="container text-white" >
+        <h2 class="display-5 mp-text">Main Project</h2>
+        <div class="mp-text text-white d-none d-lg-block">This was one of my first projects when I started web front end.</div>
+        <div class="mp-text text-white d-none d-lg-block">I learned how to place and format text, images and links.</div>
+      <!-- </div> -->
+    </div>
   </a>
+  </div>
   <!-- Bootstrap cards here -->
   <div class="container bg-dark">
 
@@ -84,101 +104,122 @@
 
       <div class="col-md-6 bg-dark">
         <a href="https://benjistealth.github.io/benji_personal_webdev_portfolio/">
-        <div class="card" id="card1">
-          <div class="card-block">
-            <div class="card-img-top card1 img-fluid" alt="..."></div>
-            <div class="card-body">
-              <h5 class="card-title">Old WebDev Portfolio</h5>
-              <p class="card-text">I was climbing a steep path to learning some new technologies here.  I used CSS Grid here, and implemented Media Queries.</p>
-              <p class="card-text"><small class="text-muted">It isn't pretty but it demonstrates some new skills</small>
-              </p>
+          <!-- added box shadows to cards via bootstrap but doesnt show well on my dark theme -->
+          <div class="card shadow-lg p-3 mb-5" id="card1">
+            <div class="card-block">
+              <div class="card-img-top card1 img-fluid" alt="Actual screenshot of my old web dev portfolio"></div>
+              <div class="card-body">
+                <h5 class="card-title">Old WebDev Portfolio</h5>
+                <p class="card-text">I was climbing a steep path to learning some new technologies here. I used CSS
+                  Grid, and implemented Media Queries.</p>
+                <p class="card-text"><small class="text-muted">It isn't pretty but it demonstrates some new
+                    skills</small>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </a>
+        </a>
       </div>
       <div class="col-md-6">
         <a href="https://benjistealth.github.io/benji_refactoring_challenge_module1/">
-        <div class="card" id="card2">
-          <div class="card-block">
-            <div class="card-img-top card2 img-fluid" alt="..."></div>
-            <div class="card-body">
-              <h5 class="card-title">Horiseon Refactoring Challenge</h5>
-              <p class="card-text">Here I refactored an existing page that had some broken  links and needed some other improvements.</p>
-              <p class="card-text"><small class="text-muted">I was very pleased with the way that this turned out.</small>
-              </p>
+          <div class="card shadow-lg p-3 mb-5" id="card2">
+            <div class="card-block">
+              <div class="card-img-top card2 img-fluid" alt="Horiseon Logo"></div>
+              <div class="card-body">
+                <h5 class="card-title">Horiseon Refactoring Challenge</h5>
+                <p class="card-text">Here I refactored an existing page that had some broken links and needed some other
+                  improvements.</p>
+                <p class="card-text"><small class="text-muted">I was very pleased with the way that this turned
+                    out.</small>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </a>
+        </a>
       </div>
       <div class="col-md-6">
-        <div class="card" id="card3">
-          <div class="card-block">
-            <div class="card-img-top card3 img-fluid" alt="..."></div>
-            <div class="card-body">
-              <h5 class="card-title">Project Placeholder</h5>
-              <p class="card-text">Morbi euismod vestibulum quam ut dictum. Aliquam in tortor pellentesque, accumsan est ac, interdum dui. Donec facilisis vitae dolor ac eleifend. Cras lorem augue.</p>
-              <p class="card-text"><small class="text-muted">Mauris porta, odio a egestas ornare, augue nunc volutpat ante, vitae facilisis lorem nisl non risus. Aliquam aliquam libero nisl, id sollicitudin erat.</small>
-              </p>
+        <a href="https://placehold.co/">
+          <div class="card shadow-lg p-3 mb-5" id="card3">
+            <div class="card-block">
+              <div class="card-img-top card3 img-fluid" alt="Placeholder image - mint green in color"></div>
+              <div class="card-body">
+                <h5 class="card-title">Project Placeholder</h5>
+                <p class="card-text">Morbi euismod vestibulum quam ut dictum. Aliquam in tortor pellentesque, accumsan
+                  est ac, interdum dui. Donec facilisis vitae dolor ac eleifend. Cras lorem augue.</p>
+                <p class="card-text"><small class="text-muted">Mauris porta, odio a egestas ornare, augue nunc volutpat
+                    ante, vitae facilisis lorem nisl non risus. Aliquam aliquam libero nisl, id sollicitudin
+                    erat.</small>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
       <div class="col-md-6">
-        <div class="card" id="card4">
-          <div class="card-block">
-            <div class="card-img-top card4 img-fluid" alt="..."></div>
-            <div class="card-body">
-              <h5 class="card-title">Project Placeholder</h5>
-              <p class="card-text">Morbi euismod vestibulum quam ut dictum. Aliquam in tortor pellentesque, accumsan est ac, interdum dui. Donec facilisis vitae dolor ac eleifend. Cras lorem augue.</p>
-              <p class="card-text"><small class="text-muted">Mauris porta, odio a egestas ornare, augue nunc volutpat ante, vitae facilisis lorem nisl non risus. Aliquam aliquam libero nisl, id sollicitudin erat.</small>
-              </p>
+        <a href="https://placehold.co/">
+          <div class="card shadow-lg p-3 mb-5" id="card4">
+            <div class="card-block">
+              <div class="card-img-top card4 img-fluid" alt="Placeholder image - pink in color"></div>
+              <div class="card-body">
+                <h5 class="card-title">Project Placeholder</h5>
+                <p class="card-text">Morbi euismod vestibulum quam ut dictum. Aliquam in tortor pellentesque, accumsan
+                  est ac, interdum dui. Donec facilisis vitae dolor ac eleifend. Cras lorem augue.</p>
+                <p class="card-text"><small class="text-muted">Mauris porta, odio a egestas ornare, augue nunc volutpat
+                    ante, vitae facilisis lorem nisl non risus. Aliquam aliquam libero nisl, id sollicitudin
+                    erat.</small>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
       </div>
     </div>
+    </a>
   </div>
 
   <footer>
-    <div>
+    <div class="container-fluid text-white justify-content-center" id="footer">
     <!-- changed the native color to dark using inbuilt CSS from Bootstrap :-) -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mx-auto text-white" id="contact">
+    <nav class="nav justify-content-center nav-pills navbar-dark bg-dark text-white">
+      <nav class="nav justify-content-center nav-pills flex-md-row text-white">
+        <a class="nav-link active" href="#skills" data-toggle="tab">Skills</a>
+        <a class="nav-link" href="#contact" data-toggle="tab">Contact</a>
+        <a class="nav-link" href="#more" data-toggle="tab">More About</a>
+      </nav>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Github</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Instagram</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Personal</a>
-          </li>
-        </ul>
+      <!-- added py-5 and px-5 for vertical and horizontal padding to tabbed content -->
+      <div class="tab-content py-5 px-5">
+        <div class="tab-pane active" id="skills">
+          <h3>Bootcamp Skills</h3>
+          <p>The EDX Front End Web Development Bootcamp is a serious course for serious people wanting some serious
+            skills.
+            The main reason for writing this much is die to the fact that I have a weird bug in this footer/nav thingy.
+            Key Bootcamp skills: HTML / CSS / Bootstrap / Javascript AJAX / REACT.js / Developer Mindset / Developer
+            Tools / Developer Technologies.</p>
+        </div>
+        <div class="tab-pane" id="contact">
+          <h3>Contact Details</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.</p>
+        </div>
+        <div class="tab-pane" id="more">
+          <h3>More About Me</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.</p>
+        </div>
       </div>
-    </nav>
-  </div>
+      </div>
 
   </footer>
 
-
-
-
-  <!-- Optional JavaScript; choose one of the two! -->
-
-  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script> -->
-
-  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!-- Separate Popper and Bootstrap JS -->
 
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
